@@ -1,0 +1,63 @@
+<header class="header js-header">
+  <div class="menu-container container">
+    <a class="logo" href="./index.html" aria-label="site logo">
+      <svg width="24" height="24" class="logo-svg">
+        <use href="./images/sprite.svg#icon-film"></use>
+      </svg>
+      <span class="logo_header">Filmoteka</span></a
+    >
+
+    <div class="menu-nav-container">
+      <nav class="navbar">
+        <ul class="navbar-menu">
+          <li class="navbar-item_wrap" id="home">
+            <!-- клас nav-link--current потрібно динамічно додавати і забирати через js на одну з двох лішок -->
+            <a class="navbar-item_link nav-link--current" href="./index.html"
+              >Home</a
+            >
+          </li>
+          <li class="navbar-item_wrap" id="library">
+            <button class="navbar-item_btn">My library</button>
+          </li>
+        </ul>
+      </nav>
+      <div class="sign_out_wrap is-hidden" id="sign_out">
+        <button
+          class="sign_out_btn js-sign-out-btn"
+          aria-label="sign out button"
+        >
+          <svg width="30" height="30" class="logout-svg">
+            <use href="./images/sprite.svg#logout-icon"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- input form -->
+  <div class="search-container">
+    <form class="search-form" id="search-form">
+      <input
+        class="input-box"
+        type="text"
+        name="searchQuery"
+        autocomplete="off"
+        placeholder="Movie search"
+        required
+      />
+      <button class="search-btn" type="submit" aria-label="search movies">
+        <svg class="search-icon" width="12" height="12">
+          <use href="./images/sprite.svg#icon-search-2"></use>
+        </svg>
+      </button>
+    </form>
+    <p class="form-text visually-hidden">
+      Search result not successful. Enter the correct movie name.
+    </p>
+  </div>
+
+  <div class="btns-container visually-hidden">
+    <button class="button watched active">Watched</button>
+    <button class="button queued">Queue</button>
+  </div>
+</header>

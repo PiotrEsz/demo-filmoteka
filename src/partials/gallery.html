@@ -1,0 +1,39 @@
+<section class="gallery">
+  <div class="container">
+    <div class="error_container visually-hidden">
+      <p class="error-text">Sorry, nothing was found...</p>
+    </div>
+    <div class="button-wrap btns-container visually-hidden">
+      <ul class="btn-list">
+        <li class="btn-list__item">
+          <button
+            type="button"
+            class="button btn-filter button-accent-filter"
+            data-id="popular"
+          >
+            popular
+          </button>
+        </li>
+        <li class="btn-list__item">
+          <button type="button" class="button btn-filter" data-id="top_rated">
+            top rated
+          </button>
+        </li>
+        <li class="btn-list__item">
+          <button type="button" class="button btn-filter" data-id="upcoming">
+            upcoming
+          </button>
+        </li>
+      </ul>
+    </div>
+    <h1 class="visually-hidden">Filmoteka</h1>
+    <ul class="gallery__list"></ul>
+
+    <div class="pagination-wrapper visually-hidden">
+      <div id="tui-pagination-container" class="tui-pagination"></div>
+    </div>
+  </div>
+  <button type="button" class="load-more button btn-filter">Load more</button>
+</section>
+<button type="button" class="back-to-top-btn visually-hidden"> &#10148;</button>
+
